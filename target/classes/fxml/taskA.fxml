@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.TaskAController">
+   <children>
+      <Label layoutX="192.0" layoutY="88.0" text="Area" />
+      <TextField fx:id="areaLbl" layoutX="236.0" layoutY="84.0" />
+      <Label layoutX="278.0" layoutY="34.0" text="Task A">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="113.0" layoutY="161.0" prefHeight="200.0" prefWidth="416.0">
+        <columns>
+          <TableColumn fx:id="regionCol" prefWidth="137.0" text="Region" />
+          <TableColumn fx:id="regionCenterCol" prefWidth="145.0" text="Region Center" />
+            <TableColumn fx:id="areaCol" prefWidth="133.0" text="Area" />
+        </columns>
+      </TableView>
+      <Button layoutX="423.0" layoutY="84.0" mnemonicParsing="false" onAction="#click" text="Search" />
+   </children>
+</AnchorPane>
